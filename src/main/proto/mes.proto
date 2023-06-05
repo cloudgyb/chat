@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "com.github.cloudgyb.heartchat.modules.server.protocol";
+
+option java_outer_classname = "ImMsgProtocols";
+
+message ImMsg {
+    uint32 id = 1;
+    string content = 2;
+}
+

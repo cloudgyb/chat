@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "name": "chat",
+      "type": "com.github.cloudgyb.heartchat.modules.server.ChatNettyServerConfig",
+      "sourceType": "com.github.cloudgyb.heartchat.modules.server.ChatNettyServerConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "chat.host",
+      "type": "java.lang.String",
+      "sourceType": "com.github.cloudgyb.heartchat.modules.server.ChatNettyServerConfig"
+    },
+    {
+      "name": "chat.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.github.cloudgyb.heartchat.modules.server.ChatNettyServerConfig",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}
