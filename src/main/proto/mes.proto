@@ -4,8 +4,24 @@ option java_package = "com.github.cloudgyb.heartchat.modules.server.protocol";
 
 option java_outer_classname = "ImMsgProtocols";
 
-message ImMsg {
-    uint32 id = 1;
-    string content = 2;
+message ImSendMsg {
+    uint64 id = 1;
+    string sender = 2;
+    string receiver = 3;
+    uint32 type = 4;
+    string content = 5;
+    uint64 timestamp = 6;
 }
+
+
+
+message ImAckMsg {
+    uint64 msg_id = 1;
+    uint32 success = 2;
+    string reason = 3;
+    uint64 timestamp = 4;
+    ImSendMsg msg = 5;
+}
+
+
 

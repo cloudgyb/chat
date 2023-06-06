@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class ChatNettyServerBootstrap implements ApplicationRunner {
-    private ChatNettyServer chatNettyServer;
+    private volatile ChatNettyServer chatNettyServer;
     private final ChatNettyServerConfig serverConfig;
 
     public ChatNettyServerBootstrap(ChatNettyServerConfig serverConfig) {
